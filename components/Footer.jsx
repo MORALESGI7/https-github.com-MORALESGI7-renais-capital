@@ -1,104 +1,3 @@
-
-// import React from 'react';
-// import { motion } from 'framer-motion';
-// import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
-
-// const Footer = () => {
-//   const currentYear = new Date().getFullYear();
-
-//   const footerLinks = {
-//     company: [
-//       { label: 'About Us', href: '#about' },
-//       { label: 'Services', href: '#services' },
-//       { label: 'Process', href: '#process' },
-//       { label: 'Contact', href: '#contact' }
-//     ],
-//     legal: [
-//       { label: 'Privacy Policy', href: '#' },
-//       { label: 'Terms of Service', href: '#' },
-//       { label: 'Compliance', href: '#' },
-//       { label: 'Disclosures', href: '#' }
-//     ]
-//   };
-
-//   const socialLinks = [
-//     // { icon: Facebook, href: '#', label: 'Facebook' },
-//     // { icon: Twitter, href: '#', label: 'Twitter' },
-//     // { icon: Linkedin, href: '#', label: 'LinkedIn' },
-//     // { icon: Instagram, href: '#', label: 'Instagram' }
-//   ];
-
-//   return (
-//     <footer className="bg-slate-900 text-white pt-16 pb-8">
-//       <div className="container mx-auto px-6">
-//         <div className="grid md:grid-cols-4 gap-12 mb-12">
-//           <div className="md:col-span-2">
-//             <div className="text-3xl font-bold mb-4">
-//               <span className="font-serif">Renais</span>
-//               <span className="gold-accent font-serif"> Capital</span>
-//             </div>
-//             <p className="text-slate-400 mb-6 max-w-md">
-//               A premier international financing boutique delivering sophisticated financial solutions with modern luxury and unparalleled expertise.
-//             </p>
-//             <div className="flex space-x-4">
-//               {socialLinks.map((social, index) => (
-//                 <motion.a
-//                   key={index}
-//                   href={social.href}
-//                   whileHover={{ scale: 1.1, y: -2 }}
-//                   className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors"
-//                   aria-label={social.label}
-//                 >
-//                   <social.icon size={20} />
-//                 </motion.a>
-//               ))}
-//             </div>
-//           </div>
-
-//           <div>
-//             <span className="text-lg font-semibold mb-4 block">Company</span>
-//             <ul className="space-y-3">
-//               {footerLinks.company.map((link, index) => (
-//                 <li key={index}>
-//                   <a href={link.href} className="text-slate-400 hover:text-white transition-colors">
-//                     {link.label}
-//                   </a>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-
-//           <div>
-//             <span className="text-lg font-semibold mb-4 block">Legal</span>
-//             <ul className="space-y-3">
-//               {footerLinks.legal.map((link, index) => (
-//                 <li key={index}>
-//                   <a href={link.href} className="text-slate-400 hover:text-white transition-colors">
-//                     {link.label}
-//                   </a>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-//         </div>
-
-//         <div className="border-t border-slate-800 pt-8">
-//           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-//             <p className="text-slate-400 text-sm">
-//               © {currentYear} Renais Capital. All rights reserved.
-//             </p>
-//             <p className="text-slate-400 text-sm">
-//               Securities offered through licensed professionals. Member FINRA/SIPC.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import LegalModal from "@/components/LegalModal"; // <- asegúrate de la ruta correcta
@@ -127,7 +26,7 @@ const Footer = () => {
       title: "Privacy Policy",
       content: (
         <>
-          <p><strong>Last updated:</strong> [DATE]</p>
+          <p><strong>Last updated</strong> </p>
           <p>
             Renais Capital (“we”, “us”, “our”) provides cross-border finance consulting
             services. This Privacy Policy explains how we collect, use, and protect
@@ -188,7 +87,7 @@ const Footer = () => {
       title: "Terms of Service",
       content: (
         <>
-          <p><strong>Last updated:</strong> [DATE]</p>
+          <p><strong>Last updated</strong> </p>
           <h4 className="font-semibold text-white">1. Scope</h4>
           <p>
             We provide independent consulting in cross-border financial structuring,
@@ -235,7 +134,7 @@ const Footer = () => {
       title: "Compliance",
       content: (
         <>
-          <p><strong>Last updated:</strong> [DATE]</p>
+          <p><strong>Last updated</strong> </p>
           <ul className="list-disc ml-5 space-y-2">
             <li>
               Renais Capital acts solely as an independent consulting firm. Where a
@@ -266,7 +165,7 @@ const Footer = () => {
       title: "Disclosures",
       content: (
         <>
-          <p><strong>Last updated:</strong> [DATE]</p>
+          <p><strong>Last updated</strong> </p>
           <ul className="list-disc ml-5 space-y-2">
             <li>
               Nothing on this site is an offer to sell or a solicitation to buy any
